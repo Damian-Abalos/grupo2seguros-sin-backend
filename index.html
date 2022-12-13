@@ -17,8 +17,8 @@
     <nav class="navbar sticky-top navbar-expand-lg bg-light navbar bg-light">
       <div class="container-fluid container">
         <a class="navbar-brand" href="#">
-          <img src="https://i.ibb.co/kgZGdTs/LOGO-MUESTRA-GRUPO-2-Mesa-de-trabajo-1.png" alt="logo seguro grupo 2" width="120"
-            height="34">
+          <img src="https://i.ibb.co/kgZGdTs/LOGO-MUESTRA-GRUPO-2-Mesa-de-trabajo-1.png" alt="logo seguro grupo 2"
+            width="120" height="34">
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -79,7 +79,7 @@
 
         <div class="accordion-item col-lg-6 col-md-6 col-sm-12 mt-2">
           <h2 class="accordion-header" id="acordion-motos">
-            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button boton-seguro collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseMotos" aria-expanded="true" aria-controls="collapseMotos"
               onclick="changeStateBtn(0)">
               <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
@@ -92,9 +92,28 @@
             </button>
           </h2>
         </div>
+        <div id="collapseMotos" class="accordion-collapse collapse mobile" aria-labelledby="acordion-motos"
+        data-bs-parent="#accordionSeguros">
+        <div class="accordion-body">
+          <p>Motos
+            Las motos son uno de los medios de transporte mas utilizados hoy en día ,pero
+            tambien los
+            más expuestos e inseguros. <br>
+            Por eso es importante tener un buen seguro por tu tranquilidad y la de los demás.
+            <br>
+            Tenemos las mejores coberturas para proteger tu moto vaya donde vaya!! <br>
+            Responsabilidad Civil <br>
+            Robo <br>
+            Cobertura Premium <br>
+            Cotización sin cargo <br>
+            Contáctanos
+          </p>
+          <button class="btn btn-danger">COTIZAR</button>
+        </div>
+      </div>
         <div class="accordion-item col-lg-6 col-md-6 col-sm-12 mt-2">
           <h2 class="accordion-header" id="acordion-bicicletas">
-            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+            <button class="accordion-button boton-seguro collapsed " type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseBicicletas" aria-expanded="false" aria-controls="collapseBicicletas"
               onclick="changeStateBtn(1)">
               <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
@@ -106,7 +125,7 @@
           </h2>
         </div>
 
-        <div id="collapseMotos" class="accordion-collapse collapse" aria-labelledby="acordion-motos"
+        <div id="collapseMotos" class="accordion-collapse no-mobile collapse" aria-labelledby="acordion-motos"
           data-bs-parent="#accordionSeguros">
           <div class="accordion-body">
             <p>Motos
@@ -148,7 +167,7 @@
 
         <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
           <h2 class="accordion-header" id="acordion-autos">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseAutos" aria-expanded="false" aria-controls="collapseAutos"
               onclick="changeStateBtn(2)">
               <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
@@ -161,9 +180,28 @@
             </button>
           </h2>
         </div>
+        <div id="collapseAutos" class="accordion-collapse mobile collapse " aria-labelledby="acordion-autos"
+        data-bs-parent="#accordionSeguros">
+        <div class="accordion-body">
+          <p>Automotor
+            Las motos son uno de los medios de transporte mas utilizados hoy en día ,pero
+            tambien los
+            más expuestos e inseguros. <br>
+            Por eso es importante tener un buen seguro por tu tranquilidad y la de los demás.
+            <br>
+            Tenemos las mejores coberturas para proteger tu moto vaya donde vaya!! <br>
+            Responsabilidad Civil <br>
+            Robo <br>
+            Cobertura Premium <br>
+            Cotización sin cargo <br>
+            Contáctanos
+          </p>
+          <button class="btn btn-danger">COTIZAR</button>
+        </div>
+      </div>
         <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
           <h2 class="accordion-header" id="acordion-hogar">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseHogar" aria-expanded="false" aria-controls="collapseHogar"
               onclick="changeStateBtn(3)">
               <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
@@ -177,7 +215,7 @@
           </h2>
         </div>
 
-        <div id="collapseAutos" class="accordion-collapse collapse " aria-labelledby="acordion-autos"
+        <div id="collapseAutos" class="accordion-collapse no-mobile collapse " aria-labelledby="acordion-autos"
           data-bs-parent="#accordionSeguros">
           <div class="accordion-body">
             <p>Automotor
@@ -218,7 +256,7 @@
 
         <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
           <h2 class="accordion-header" id="acordion-motos">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseComercios" aria-expanded="false" aria-controls="collapseComercios"
               onclick="changeStateBtn(4)">
               <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
@@ -231,9 +269,28 @@
             </button>
           </h2>
         </div>
+        <div id="collapseComercios" class="accordion-collapse mobile collapse " aria-labelledby="acordion-comercios"
+        data-bs-parent="#accordionSeguros">
+        <div class="accordion-body">
+          <p>Comercios
+            Las motos son uno de los medios de transporte mas utilizados hoy en día ,pero
+            tambien los
+            más expuestos e inseguros. <br>
+            Por eso es importante tener un buen seguro por tu tranquilidad y la de los demás.
+            <br>
+            Tenemos las mejores coberturas para proteger tu moto vaya donde vaya!! <br>
+            Responsabilidad Civil <br>
+            Robo <br>
+            Cobertura Premium <br>
+            Cotización sin cargo <br>
+            Contáctanos
+          </p>
+          <button class="btn btn-danger">COTIZAR</button>
+        </div>
+      </div>
         <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
           <h2 class="accordion-header" id="acordion-accidentes">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseAccidentes" aria-expanded="false" aria-controls="collapseAccidentes"
               onclick="changeStateBtn(5)">
               <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
@@ -247,7 +304,7 @@
           </h2>
         </div>
 
-        <div id="collapseComercios" class="accordion-collapse collapse " aria-labelledby="acordion-comercios"
+        <div id="collapseComercios" class="accordion-collapse no-mobile collapse " aria-labelledby="acordion-comercios"
           data-bs-parent="#accordionSeguros">
           <div class="accordion-body">
             <p>Comercios
@@ -288,7 +345,7 @@
 
         <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
           <h2 class="accordion-header" id="acordion-caucion">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseCaucion" aria-expanded="false" aria-controls="collapseCaucion"
               onclick="changeStateBtn(6)">
               <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
@@ -301,9 +358,28 @@
             </button>
           </h2>
         </div>
+        <div id="collapseCaucion" class="accordion-collapse mobile collapse " aria-labelledby="acordion-caucion"
+        data-bs-parent="#accordionSeguros">
+        <div class="accordion-body">
+          <p>Caucion
+            Las motos son uno de los medios de transporte mas utilizados hoy en día ,pero
+            tambien los
+            más expuestos e inseguros. <br>
+            Por eso es importante tener un buen seguro por tu tranquilidad y la de los demás.
+            <br>
+            Tenemos las mejores coberturas para proteger tu moto vaya donde vaya!! <br>
+            Responsabilidad Civil <br>
+            Robo <br>
+            Cobertura Premium <br>
+            Cotización sin cargo <br>
+            Contáctanos
+          </p>
+          <button class="btn btn-danger">COTIZAR</button>
+        </div>
+      </div>
         <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
           <h2 class="accordion-header" id="acordion-otros">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseOtros" aria-expanded="false" aria-controls="collapseOtros"
               onclick="changeStateBtn(7)">
               <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
@@ -317,7 +393,7 @@
           </h2>
         </div>
 
-        <div id="collapseCaucion" class="accordion-collapse collapse " aria-labelledby="acordion-caucion"
+        <div id="collapseCaucion" class="accordion-collapse no-mobile collapse " aria-labelledby="acordion-caucion"
           data-bs-parent="#accordionSeguros">
           <div class="accordion-body">
             <p>Caucion

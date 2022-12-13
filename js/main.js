@@ -11,37 +11,45 @@ const errorEmail = document.getElementById('error-email')
 const errorTelefono = document.getElementById('error-telefono')
 const errorConsulta = document.getElementById('error-consulta')
 
-let botonesSeguro = document.getElementsByClassName('accordion-button')
+let botonesSeguro = document.getElementsByClassName('boton-seguro')
 let img_btn_seguro_cerrado = document.getElementsByClassName('img-botones-seguro')
 let img_btn_seguro_abierto = document.getElementsByClassName('img-botones-seguro-abierto')
 
-function changeStateBtn(indexElement) {
-    for (let index = 0; index < botonesSeguro.length; index++) {
+// for (let index = 0; index < botonesSeguro.length; index++) {
+//     img_btn_seguro_abierto[index].setAttribute("style", 'display:none')
+//     img_btn_seguro_cerrado[index].style.display = 'block';
+
+// }
+function changeStateBtn(index) {
+    // console.log(botonesSeguro);
+
+    for (let i = 0; i < botonesSeguro.length; i++) {
+        img_btn_seguro_abierto[i].style.display = "none";
+        img_btn_seguro_cerrado[i].style.display = 'block';
+    }
+
+    let boton = botonesSeguro[index]
+    if (boton.ariaExpanded == 'true') {
+        // console.log('boton abierto');
+        img_btn_seguro_abierto[index].style.display = 'block';
+        img_btn_seguro_cerrado[index].style.display = 'none';
+    } else {
+        // console.log('boton cerrado');
         img_btn_seguro_abierto[index].style.display = 'none';
         img_btn_seguro_cerrado[index].style.display = 'block';
-        
-    }
-    let boton = botonesSeguro[indexElement]
-    if (boton.ariaExpanded == 'true') {
-        console.log('boton abierto');
-        img_btn_seguro_abierto[indexElement].style.display = 'block';
-        img_btn_seguro_cerrado[indexElement].style.display = 'none';
-    } else {
-        img_btn_seguro_abierto[indexElement].style.display = 'none';
-        img_btn_seguro_cerrado[indexElement].style.display = 'block';
     }
 
 }
 let cedulafrente = document.getElementById('input-cedula-frente')
 let toinsert = document.getElementById('insertfile')
 function mostrarimg() {
-    alert(cedulafrente); 
+    alert(cedulafrente);
 }
 
-function validarConsulta(){
+function validarConsulta() {
 
     // e.preventDefault();
-    
+
 
 
     if (nombre.value === null || consulta.value === '') {
@@ -58,11 +66,11 @@ function validarConsulta(){
 
     if (consulta.value === null || consulta.value === '') {
         errorConsulta.innerHTML = `ingresa tu consulta`
-    }    
+    }
     if (nombre.value == '' || email.value == '' || telefono.value == '' || consulta.value == '') {
-        alert('por favor, complete todos los campose')        
+        alert('por favor, complete todos los campose')
     } else {
         alert('consulta enviada')
     }
-    
+
 }
