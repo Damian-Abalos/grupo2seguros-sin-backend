@@ -48,29 +48,34 @@ function mostrarimg() {
 
 function validarConsulta() {
 
-    // e.preventDefault();
 
-
-
-    if (nombre.value === null || consulta.value === '') {
+    if (nombre.value === null || nombre.value === '') {
         errorNombre.innerHTML = `ingresa tu nombre`
+    } else {
+        errorNombre.innerHTML = ""
     }
-
+    
     if (email.value === null || email.value === '') {
         errorEmail.innerHTML = `ingresa tu email`
+    } else {
+        errorEmail.innerHTML = ""
     }
-
+    
     if (telefono.value === null || telefono.value === '') {
         errorTelefono.innerHTML = `ingresa tu telefono`
+    } else {
+        errorTelefono.innerHTML = ""
     }
 
     if (consulta.value === null || consulta.value === '') {
         errorConsulta.innerHTML = `ingresa tu consulta`
+    } else {
+        errorConsulta.innerHTML = ""
     }
     if (nombre.value == '' || email.value == '' || telefono.value == '' || consulta.value == '') {
-        alert('por favor, complete todos los campose')
+        alert('por favor, complete todos los campos')
     } else {
         alert('consulta enviada')
     }
-
 }
+
