@@ -1,9 +1,8 @@
+/* banner */
 * {
-  margin-top: 0;
+  margin: 0;
   padding: 0;
 }
-
-/*Boton de whatsapp*/
 
 .btn-wsp {
   position: fixed;
@@ -20,80 +19,77 @@
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 100;
   transition: all 300ms ease;
-
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
 
-
 .btn-wsp:hover {
   color: #20ba5a;
   background-color: white;
 }
 
-@media only screen and (min-width:320px) and (max-width:768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   .btn-wsp {
     width: 63px;
     height: 63px;
     line-height: 66px;
   }
 }
+.seccion-banner img {
+  max-width: 100%;
+}
+.seccion-banner .img-banner-menos-500px {
+  display: none;
+}
 
-/*******************/
-
+@media screen and (max-width: 600px) {
+  .seccion-banner .img-banner-menos-500px {
+    display: block;
+  }
+  .seccion-banner .img-banner-mas-500px {
+    display: none;
+  }
+}
 .accordion-button:focus :checked :visited {
   box-shadow: none;
-  border-color: rgba(0, 0, 0) !important;
+  border-color: rgb(0, 0, 0) !important;
 }
 
 .accordion-button:not(.collapsed) {
   box-shadow: none !important;
 }
 
-
-
-.banner-img {
-  max-width: 100%;
-  display: block;
-
-}
-
-/*header*/
-
 .nav-link:hover {
   border-color: red !important;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .bootstrap-nav .navbar .navbar-collapse {
     margin-left: 1em;
   }
 }
-
 .bootstrap-nav .navbar .navbar-collapse .nav-item :hover {
   border: 2px red solid;
   padding: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
 }
 
-
 /*BLOQUE TRBAJANDO*/
-
 .div-seguros {
-  background-color: rgb(180, 180, 180);
+  background-color: #d3d1d1;
   width: 100%;
   height: 6%;
-
 }
 
 .contenedor-log-seguro-h1 {
   display: flex;
   text-align: center;
-  width: 75%;
+  width: 60%;
   margin: auto;
-
 }
 
 .img-logo-seguro {
@@ -114,6 +110,17 @@
   margin-bottom: auto;
 }
 
+@media (max-width: 550px) {
+  .h1-seguros {
+    font-size: 20px;
+  }
+  .img-logo-seguro {
+    max-height: 28px;
+  }
+  .contenedor-log-seguro-h1 {
+    width: 85%;
+  }
+}
 .seguros .btn {
   border-radius: 0 !important;
 }
@@ -123,7 +130,7 @@
 }
 
 .botones-seguros {
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 
@@ -133,6 +140,11 @@
   font-size: 35px;
 }
 
+@media (max-width: 410px) {
+  .botones-seguros h3 {
+    font-size: 25px;
+  }
+}
 .img-botones-seguro-abierto {
   max-height: 30px;
   margin-top: auto;
@@ -150,13 +162,13 @@
   height: 80px;
   border-radius: 15px !important;
   color: aliceblue;
-  border: 0 black solid;
+  border: 2px black solid;
 }
 
 .seguros .collapsed:hover {
-  transition: all 0.5s;
-  border: rgb(201, 60, 60) solid 3px;
-  color: rgb(201, 60, 60);
+  transition: 0.5s;
+  border: #dd365a solid 3px;
+  color: #dd365a;
 }
 
 .seguros .accordion {
@@ -177,7 +189,7 @@
 }
 
 .seguros .accordion-button:not(.collapsed) {
-  background-color: rgb(201, 60, 60) !important;
+  background-color: #dd365a !important;
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.2;
@@ -195,7 +207,7 @@
 }
 
 .seguros .accordion-body {
-  border: 3px solid rgb(201, 60, 60);
+  border: 3px solid #dd365a;
   max-width: 830px;
   margin: auto;
 }
@@ -204,63 +216,49 @@
   box-shadow: none !important;
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1300px) {
+  .botones-seguros {
+    margin: auto;
+    width: 700px;
+  }
+}
+@media (max-width: 765px) {
   .botones-seguros {
     margin: auto;
     width: 80%;
   }
 }
-
-@media (max-width:830px) {
-  .botones-seguros {
-    margin: auto;
-    width: 85%;
-  }
-}
-
 .seguros .mobile {
   display: none;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .seguros .accordion-body {
     max-width: 400px;
     min-width: 220px;
     margin: auto;
   }
-
   .seguros .no-mobile {
     display: none;
   }
-
   .seguros .mobile {
     display: block;
   }
 }
-
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .seguros .accordion-collapse {
     margin: auto;
     padding: 0;
   }
-
   .seguros .accordion-button {
     margin: auto;
   }
-
   .seguros .accordion-item {
     padding: 0;
   }
-
-  .botones-seguros h3{
-    font-size: 28px;
-  }
 }
-
 /*FIN BLOQUE*/
-
 /*seccion-formularios-siniestro-y-nuevo-seguro*/
-
 .seccion-formularios-siniestro-y-nuevo-seguro {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -274,11 +272,10 @@
   border: none;
 }
 
-/* .seccion-formularios-siniestro-y-nuevo-seguro .div-solicitud-seguro-nuevo .boton-solicitud-seguro-nuevo:hover {
-  width: 95%;
+.seccion-formularios-siniestro-y-nuevo-seguro .div-solicitud-seguro-nuevo .boton-solicitud-seguro-nuevo:hover {
   border: solid 2px rgb(253, 255, 160);
-  transition:all 1s;
-} */
+  transition: 1s;
+}
 
 .seccion-formularios-siniestro-y-nuevo-seguro .div-solicitud-seguro-nuevo .img-solicitud-seguro-nuevo-menos500px {
   display: none;
@@ -294,7 +291,7 @@
 
 .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .boton-siniestro:hover {
   border: solid 2px rgb(255, 199, 199);
-  transition: all 1s;
+  transition: 1s;
 }
 
 .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .img-informe-de-siniestro-menos500px {
@@ -327,12 +324,26 @@
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .titulo-sinietro {
     height: 30px;
   }
-
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .titulo-sinietro img {
-    margin-left: 22%;
+    margin-left: 9%;
     width: 22px;
     height: 30px;
   }
+}
+body {
+  background-color: #dd365a;
+}
+
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-boton-siniestro {
+  display: flex;
+  justify-content: end;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-boton-siniestro .boton-form-siniestro {
+  width: 80px;
+  height: 50px;
+  background-color: rgb(201, 60, 60);
+  border: solid rgba(255, 0, 0, 0.027) 1px;
+  color: aliceblue;
 }
 
 .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro h3 {
@@ -352,9 +363,17 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-datos h4 {
-  margin-top: 25px;
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-datos .input-cel::-moz-placeholder {
+  font-size: 15px;
+  color: #dd365a;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-datos .input-cel:-ms-input-placeholder {
+  font-size: 15px;
+  color: #dd365a;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-datos .input-cel::placeholder {
+  font-size: 15px;
+  color: #dd365a;
 }
 
 .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-texto-botones {
@@ -368,9 +387,13 @@
   height: 35px;
 }
 
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro h4 {
+  color: #dd365a;
+}
+
 .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .botones-addfotos {
   color: white;
-  background-color: rgb(204, 51, 102);
+  background-color: #dd365a;
   width: 170px;
   height: 35px;
   margin-left: 5px;
@@ -383,87 +406,156 @@
 @media screen and (max-width: 550px) {
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro h3 {
     font-size: 15px;
+    width: 85%;
   }
-
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro h4 {
     text-align: center;
     font-size: 15px;
   }
-
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .texto-indicador {
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-texto-botones {
     display: inline;
   }
-
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .botones-addfotos {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
-
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-cell {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .input-cel {
     font-size: 15px;
     width: 170px;
   }
 }
-
 @media screen and (max-width: 500px) {
   .seccion-formularios-siniestro-y-nuevo-seguro .div-solicitud-seguro-nuevo .img-solicitud-seguro-nuevo-menos500px {
     display: block;
   }
-
   .seccion-formularios-siniestro-y-nuevo-seguro .div-solicitud-seguro-nuevo .img-solicitud-seguro-nuevo-mas500px {
     display: none;
   }
-
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .img-informe-de-siniestro-menos500px {
     display: block;
   }
-
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .img-informe-de-siniestro-mas500px {
     display: none;
   }
 }
-
-
-
 .div-acordiones-info-extra .div-img {
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   width: -webkit-max-content;
   width: -moz-max-content;
-  width: max-content;
+  width: 450px;
 }
 
 .div-acordiones-info-extra .img-titulo-serv-grua {
-  max-width: 24%;
+  max-width: 350px;
 }
 
-.div-acordiones-info-extra .div-img-grua {
+/* GRUA ACA */
+.div-acordiones-info-extra .div-serv-gruas {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  row-gap: 40px;
+  gap: 40px;
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-acordiones-info-extra .div-serv-gruas .div-numero {
+  width: 400px;
+}
+.div-acordiones-info-extra .div-serv-gruas .div-numero .div-grua-flex-wsp {
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  height: 45px;
+}
+.div-acordiones-info-extra .div-serv-gruas .div-numero .div-grua-flex-wsp .img-grua-wsp {
+  width: 50px;
+  margin-right: 5px;
+}
+.div-acordiones-info-extra .div-serv-gruas .div-numero img {
+  width: 400px;
+}
+.div-acordiones-info-extra .div-serv-gruas .div-numero p {
   text-align: center;
-  background-color: rgb(201, 60, 60);
+  font-size: 30px;
+  color: #1b1717;
 }
 
-.div-acordiones-info-extra .img-seguros-de-grua {
-  margin: 5em auto;
-  max-width: 60%;
-  max-height: auto;
-  background-color: white;
+@media screen and (max-width: 1000px) {
+  .div-acordiones-info-extra .div-serv-gruas {
+    grid-template-columns: 400px;
+    width: 400px;
+  }
 }
-
+@media screen and (max-width: 400px) {
+  .div-acordiones-info-extra .div-serv-gruas {
+    grid-template-columns: 240px;
+    width: 240px;
+  }
+  .div-acordiones-info-extra .div-serv-gruas .div-numero {
+    width: 240px;
+  }
+  .div-acordiones-info-extra .div-serv-gruas .div-numero .div-grua-flex-wsp {
+    margin-left: auto;
+    margin-right: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    height: 20px;
+    background-color: #dd365a;
+  }
+  .div-acordiones-info-extra .div-serv-gruas .div-numero .div-grua-flex-wsp .img-grua-wsp {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 14px;
+    height: 14px;
+  }
+  .div-acordiones-info-extra .div-serv-gruas .div-numero img {
+    margin-bottom: 10px;
+    width: 240px;
+  }
+  .div-acordiones-info-extra .div-serv-gruas .div-numero p {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+/* fin */
 .div-acordiones-info-extra .img-reclamos-de-terceros {
-  max-width: 30%;
+  max-width: 450px;
 }
 
 .div-acordiones-info-extra .img-informacion-inportante {
-  max-width: 24%;
+  max-width: 350px;
 }
 
 .div-acordiones-info-extra .accordion-button {
   height: 50px;
-  background-color: rgb(201, 60, 60);
+  background-color: #dd365a;
   margin-top: 10px;
 }
 
@@ -473,7 +565,7 @@
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  background-color: rgb(201, 60, 60);
+  background-color: #dd365a;
 }
 
 .div-acordiones-info-extra .acordion-info-importante {
@@ -491,11 +583,54 @@
   background-color: rgb(50, 240, 116);
 }
 
+.div-acordiones-info-extra .franquicias {
+  background-color: rgb(117, 241, 241);
+}
+
+.div-acordiones-info-extra .franquicias:hover {
+  background-color: rgb(90, 221, 221);
+}
+
+.div-acordiones-info-extra .div-franquicias-abierto {
+  background-color: aliceblue;
+  border: solid 5px rgb(117, 241, 241);
+  border-radius: 10px;
+}
+.div-acordiones-info-extra .div-franquicias-abierto p {
+  margin-left: 2%;
+  text-align: initial;
+  color: #1b1717;
+}
+
+.div-acordiones-info-extra .seguro {
+  background-color: #ff9f51;
+}
+
+.div-acordiones-info-extra .seguro:hover {
+  background-color: #e4761d;
+}
+
+.div-acordiones-info-extra .div-seguro-abierto {
+  color: rgb(3, 0, 0);
+  background-color: aliceblue;
+  border: solid 5px #ff9f51;
+  border-radius: 10px;
+}
+.div-acordiones-info-extra .div-seguro-abierto p {
+  margin-left: 2%;
+  text-align: initial;
+  color: #1b1717;
+}
+
 .div-acordiones-info-extra .div-cristales-abierto {
-  color: black;
   background-color: aliceblue;
   border: solid 5px rgb(105, 241, 153);
   border-radius: 10px;
+}
+.div-acordiones-info-extra .div-cristales-abierto p {
+  margin-left: 2%;
+  text-align: initial;
+  color: #1b1717;
 }
 
 .div-acordiones-info-extra .siniestro-tercero {
@@ -507,10 +642,14 @@
 }
 
 .div-acordiones-info-extra .div-siniestro-abierto {
-  color: black;
   background-color: aliceblue;
   border: solid 5px rgb(153, 204, 255);
   border-radius: 10px;
+}
+.div-acordiones-info-extra .div-siniestro-abierto p {
+  margin-left: 2%;
+  text-align: initial;
+  color: #1b1717;
 }
 
 .div-acordiones-info-extra .ruedas {
@@ -527,6 +666,11 @@
   border: solid 5px rgb(153, 102, 255);
   border-radius: 10px;
 }
+.div-acordiones-info-extra .div-ruedas-abierto p {
+  margin-left: 2%;
+  text-align: initial;
+  color: #1b1717;
+}
 
 .div-acordiones-info-extra .chocaste {
   background-color: rgb(255, 153, 255);
@@ -537,10 +681,14 @@
 }
 
 .div-acordiones-info-extra .div-chocaste-abierto {
-  color: black;
   background-color: aliceblue;
   border: solid 5px rgb(255, 153, 255);
   border-radius: 10px;
+}
+.div-acordiones-info-extra .div-chocaste-abierto p {
+  margin-left: 2%;
+  text-align: initial;
+  color: #1b1717;
 }
 
 .div-acordiones-info-extra .btn {
@@ -569,112 +717,62 @@
 }
 
 .div-acordiones-info-extra .accordion-button:not(.collapsed) {
-  background-color: rgb(201, 60, 60) !important;
+  background-color: #dd365a !important;
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.2;
   color: white !important;
 }
 
-
 @media screen and (max-width: 824px) {
   .div-acordiones-info-extra .accordion-button {
     height: 30px;
   }
-
-  .div-acordiones-info-extra .img-informacion-inportante {
-    max-width: 60%;
-  }
-
-  .div-acordiones-info-extra .img-reclamos-de-terceros {
-    max-width: 70%;
-  }
-
-  .div-acordiones-info-extra .img-titulo-serv-grua {
-    max-width: 50%;
-  }
-
   .div-acordiones-info-extra .btn {
     width: 60%;
   }
-
   .div-acordiones-info-extra .div-abiertos {
     width: 60%;
   }
 }
-
+@media screen and (max-width: 700px) {
+  .div-acordiones-info-extra .div-img {
+    width: 250px;
+  }
+  .div-acordiones-info-extra .img-informacion-inportante {
+    max-width: 200px;
+  }
+  .div-acordiones-info-extra .img-reclamos-de-terceros {
+    max-width: 250px;
+  }
+  .div-acordiones-info-extra .img-titulo-serv-grua {
+    max-width: 190px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .div-acordiones-info-extra .img-informacion-inportante {
+    max-width: 150px;
+  }
+  .div-acordiones-info-extra .img-reclamos-de-terceros {
+    max-width: 180px;
+  }
+  .div-acordiones-info-extra .img-titulo-serv-grua {
+    max-width: 140px;
+  }
+}
 @media screen and (max-width: 650px) {
   .div-acordiones-info-extra .btn {
     width: 95%;
   }
-
   .div-acordiones-info-extra .div-abiertos {
     width: 95%;
   }
 }
-
-
-
-
-
-
-/* seccion nosotros */
-.seccion-nosotros .accordion .accordion-button {
-  margin-bottom: 15px;
+.div-nosotros {
+  width: 100%;
   height: 40px;
-  color: rgb(90, 89, 89);
   background-color: rgb(204, 204, 204);
-  border: none !important;
-}
-
-.seccion-nosotros .accordion .accordion-button .accordion-button::after {
-  content: none !important;
-}
-
-.seccion-nosotros .accordion .accordion-button .titulo-nosotros-h2-img {
-  margin-left: auto;
-  width: 526px;
-  display: flex;
-}
-
-.seccion-nosotros .accordion .accordion-button .titulo-nosotros-h2-img img {
-  max-width: 30px;
-  max-height: 40px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.seccion-nosotros .accordion .accordion-button .titulo-nosotros-h2-img h2 {
-  font-family: "Libre Franklin", sans-serif;
-  color: #a1a1a1;
-  margin-left: 10px;
-  font-size: 30px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.div-sentrar-texto {
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-}
-
-@media screen and (max-width: 550px) {
-  .seccion-nosotros .accordion .accordion-button {
-    height: 30px;
-  }
-
-  .seccion-nosotros .accordion .accordion-button .titulo-nosotros-h2-img img {
-    height: 29px;
-  }
-
-  .seccion-nosotros .accordion .accordion-button .titulo-nosotros-h2-img h2 {
-    font-size: 20px;
-  }
-
-  .div-sentrar-texto {
-    width: 95%;
-  }
+  margin-bottom: 20px;
 }
 
 .consultas-seccion {
@@ -690,9 +788,6 @@
 .subtitulo-sec-consultas {
   color: #a1a1a1;
 }
-
-
-
 
 .form {
   display: grid;
@@ -711,7 +806,6 @@
   background-color: rgb(201, 60, 60);
   border: solid rgba(255, 0, 0, 0.027) 1px;
   color: aliceblue;
-
 }
 
 .div-form {
@@ -732,17 +826,10 @@
   margin-right: auto;
 }
 
-/* .footer {
-  padding: 5% 10%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: rgb(19, 18, 18);
-}
-
 .div-img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
-  margin: auto;
 }
 
 .img-footer {
@@ -752,7 +839,7 @@
 .div-horarios-footer {
   margin-top: 100px;
   margin-left: 100px;
-} */
+}
 
 h6 {
   color: aliceblue;
@@ -815,24 +902,11 @@ p {
   position: absolute;
 }
 
-
-
-
 .contenedor-informe-de-siniestro {
   margin-top: 20px;
   display: inline-block;
   position: relative;
 }
-
-/* .boton-siniestro{
-    position: absolute;
-    background-color: brown;
-    width: 8%;
-    height: 60px;
-    font-size: 30px;
-    margin-left: 65.9%;
-    margin-top:  11%;
-} */
 
 .contenedor-diferentes-seguros {
   margin-top: 20px;
@@ -857,9 +931,7 @@ p {
 }
 
 .seccion-nosotros {
-
   margin-top: 20px;
-
 }
 
 /* seccion contacto */
@@ -867,63 +939,51 @@ p {
   background-color: rgb(204, 204, 204);
   border-top: black 1px solid;
 }
-
 .seccion-contacto .div-sentrar-contacto {
   margin-left: auto;
   margin-right: auto;
   width: 580px;
 }
-
 .seccion-contacto .div-sentrar-contacto .div-contacto-h4 .contacto-h4 {
   margin-top: 10px;
   font-family: "Libre Franklin", sans-serif;
   font-size: "Libre Franklin", sans-serif;
   color: gray;
 }
-
 .seccion-contacto .div-sentrar-contacto .div-contacto-yasmin .contacto-h6 {
   color: #a1a1a1;
 }
-
 .seccion-contacto .div-sentrar-contacto .div-contacto-yasmin .contacto-p {
   color: #a1a1a1;
 }
-
 .seccion-contacto .div-sentrar-contacto .div-contacto-emails .h6-contacto-mails {
   color: #a1a1a1;
 }
-
 @media screen and (max-width: 610px) {
   .seccion-contacto .div-sentrar-contacto .div-contacto-mailss {
     display: none;
   }
 }
-
 .seccion-contacto .div-sentrar-contacto .div-contacto-mailss .contacto-yasmin {
   display: flex;
   justify-content: space-between;
 }
-
 .seccion-contacto .div-sentrar-contacto .div-contacto-mailss .contacto-yasmin P {
   font-size: 13px;
   color: #a1a1a1;
 }
-
 .seccion-contacto .div-sentrar-contacto .div-contacto-mailss .contacto-analia {
   display: flex;
   justify-content: space-between;
 }
-
 .seccion-contacto .div-sentrar-contacto .div-contacto-mailss .contacto-analia p {
   font-size: 13px;
   color: #a1a1a1;
 }
-
 .seccion-contacto .div-sentrar-contacto .div-contacto-mailss .contacto-tatiana {
   display: flex;
   justify-content: space-between;
 }
-
 .seccion-contacto .div-sentrar-contacto .div-contacto-mailss .contacto-tatiana p {
   font-size: 13px;
   color: #a1a1a1;
@@ -938,7 +998,6 @@ p {
     width: 98%;
   }
 }
-
 @media screen and (max-width: 610px) {
   .div-mobile-contactos {
     height: 300px;
@@ -946,37 +1005,141 @@ p {
     margin-right: auto;
     display: block;
   }
-
   .div-mobile-contactos .contacto-yasmin-mobile p {
     color: #a1a1a1;
   }
-
   .div-mobile-contactos .contacto-tatiana-mobile p {
     color: #a1a1a1;
   }
-
   .div-mobile-contactos .contacto-analia-mobile p {
     color: #a1a1a1;
   }
 }
-
 @media screen and (max-width: 310px) {
   .div-mobile-contactos .contacto-yasmin-mobile p {
     font-size: 12px;
   }
-
   .div-mobile-contactos .contacto-tatiana-mobile p {
     font-size: 12px;
   }
-
   .div-mobile-contactos .contacto-analia-mobile p {
     font-size: 12px;
   }
 }
+/* SOLICITUD SEGURO NUEVO */
+.div-seguro-nuevo .div-h2-flex {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(204, 204, 204);
+}
+.div-seguro-nuevo .div-h2-flex .div-h2-sentrar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  background-color: rgb(204, 204, 204);
+  display: flex;
+}
+.div-seguro-nuevo .div-h2-flex .div-h2-sentrar img {
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.div-seguro-nuevo .div-h2-flex .div-h2-sentrar h2 {
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 30px;
+  font-family: "Libre Franklin", sans-serif;
+  color: #a1a1a1;
+}
+.div-seguro-nuevo .subtitulo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+}
+.div-seguro-nuevo .subtitulo h3 {
+  color: gray;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 25px;
+}
+.div-seguro-nuevo form .div-flex {
+  width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.div-seguro-nuevo form .div-flex h6 {
+  color: black;
+  padding-left: 3px;
+  width: 170px;
+  height: 30px;
+  border: 1px solid black;
+}
+.div-seguro-nuevo form .div-flex button {
+  background-color: #dd365a;
+  margin-left: 10px;
+  color: white;
+  width: 170px;
+  height: 30px;
+}
+.div-seguro-nuevo form .selector-pago {
+  margin-left: auto;
+  margin-right: auto;
+  width: 530px;
+  background-color: #dd365a;
+}
+.div-seguro-nuevo form .selector-pago select {
+  width: 170px;
+}
 
+@media screen and (max-width: 495px) {
+  .div-seguro-nuevo .div-h2-flex {
+    height: 30px;
+  }
+  .div-seguro-nuevo .div-h2-flex .div-h2-sentrar {
+    width: 100%;
+  }
+  .div-seguro-nuevo .div-h2-flex .div-h2-sentrar img {
+    margin-left: 2%;
+    height: 29px;
+  }
+  .div-seguro-nuevo .div-h2-flex .div-h2-sentrar h2 {
+    font-size: 80%;
+  }
+  .div-seguro-nuevo .subtitulo {
+    text-align: center;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  .div-seguro-nuevo form .button-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .div-seguro-nuevo form .div-flex {
+    width: 100%;
+    display: inline-block;
+  }
+  .div-seguro-nuevo form .div-flex h6 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div-seguro-nuevo form .div-flex button {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .div-seguro-nuevo form .selector-pago {
+    text-align: center;
+    width: 100%;
+  }
+}
 /* footer */
 .footer {
-  padding: 5% 10%;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -1001,14 +1164,12 @@ p {
   .footer {
     display: inline-block;
   }
-
   .footer .horarios {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
   }
-
   .footer .QR {
     margin-top: 10px;
     width: -webkit-min-content;
@@ -1017,4 +1178,4 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
