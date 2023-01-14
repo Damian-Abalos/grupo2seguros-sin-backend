@@ -162,7 +162,7 @@
   height: 80px;
   border-radius: 15px !important;
   color: aliceblue;
-  border: 2px black solid;
+  border: 0 black solid;
 }
 
 .seguros .collapsed:hover {
@@ -355,7 +355,9 @@ body {
   font-size: 22px;
   color: #7e7e7e;
 }
-
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-datos h4 {
+  margin-top: 25px;
+}
 .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-datos {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -401,6 +403,7 @@ body {
 
 .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .input-cel {
   width: 520px;
+  padding: 2px 4px;
 }
 
 @media screen and (max-width: 550px) {
@@ -442,6 +445,7 @@ body {
   .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .input-cel {
     font-size: 15px;
     width: 170px;
+    
   }
 }
 @media screen and (max-width: 500px) {
@@ -481,7 +485,7 @@ body {
   margin-right: auto;
 }
 .div-acordiones-info-extra .div-serv-gruas .div-numero {
-  width: 400px;
+  width: 350px;
 }
 .div-acordiones-info-extra .div-serv-gruas .div-numero .div-grua-flex-wsp {
   margin-left: auto;
@@ -497,7 +501,7 @@ body {
   margin-right: 5px;
 }
 .div-acordiones-info-extra .div-serv-gruas .div-numero img {
-  width: 400px;
+  width: 350px;
 }
 .div-acordiones-info-extra .div-serv-gruas .div-numero p {
   text-align: center;
@@ -508,7 +512,7 @@ body {
 @media screen and (max-width: 1000px) {
   .div-acordiones-info-extra .div-serv-gruas {
     grid-template-columns: 400px;
-    width: 400px;
+    width: 360px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -527,7 +531,6 @@ body {
     width: max-content;
     display: flex;
     height: 20px;
-    background-color: #dd365a;
   }
   .div-acordiones-info-extra .div-serv-gruas .div-numero .div-grua-flex-wsp .img-grua-wsp {
     margin-top: auto;

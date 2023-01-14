@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,28 +35,28 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+            <a class="nav-link active" aria-current="page" href="#seccion-nosotros">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Seguros</a>
+            <a class="nav-link" href="#seccion-seguros">Seguros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#consultas-seccion">Siniestros</a>
+            <a class="nav-link" href="#informes-siniestros">Siniestros</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#consultas-seccion">Novedades</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion-contacto">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#consultas-seccion">Contacto</a>
+            <a class="nav-link" href="#servicio-de-grua">Servicio grua</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#consultas-seccion">Servicio grua</a>
+            <a class="nav-link" href="#reclamo-de-terceros">Reclamos terceros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#consultas-seccion">If importante</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#consultas-seccion">Reclamos terceros</a>
+            <a class="nav-link" href="#info-importante">Info importante</a>
           </li>
 
         </ul>
@@ -72,7 +72,7 @@
     <img class="img-banner-menos-500px" src="./imagenes/img banner principal -500px_Mesa de trabajo 1.png" alt="">
   </div>
 
-  <section class="seguros">
+  <section class="seguros" id="seccion-seguros">
     <div class="div-seguros mb-3">
       <div class="contenedor-log-seguro-h1">
         <img class="img-logo-seguro" src="./imagenes/logo seguros.png" alt="logo seguro">
@@ -447,7 +447,7 @@
             src="./imagenes/solicitud de seguro -500px_Mesa de trabajo 1.png" alt="solicitud de seguro nuevo">
         </a>
 
-    <div class="div-informe-de-siniestro">
+    <div class="div-informe-de-siniestro" id="informes-siniestros">
       <button class="boton-siniestro" type="button" data-bs-toggle="collapse" data-bs-target="#collapsInformeSiniestro"
         aria-expanded="false" aria-controls="collapsInformeSiniestro">
         <img class="img-informe-de-siniestro-mas500px"
@@ -532,7 +532,7 @@
 
                     <div>
                       <h4>Descripcion del siniestro</h4>
-                      <textarea class="descripcion-siniestro w-100" cols="30" rows="10"
+                      <textarea class="descripcion-siniestro w-100 p-2" cols="30" rows="10"
                         placeholder="Ingrese la descripcion mas completa posible para su correcta denuncia,fecha,direccion exacta,calles aledañas, horario y descripcion"></textarea>
                        
                     </div>
@@ -585,7 +585,7 @@
 
   <div class="div-acordiones-info-extra">
     <div class="accordion accordion-flush" id="accordionExample">
-      <div class="accordion-item">
+      <div class="accordion-item" id="servicio-de-grua">
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -595,7 +595,7 @@
             </div>
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        <div id="collapseOne" class="accordion-collapse collapse mt-4" aria-labelledby="headingOne"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <div class="div-serv-gruas">
@@ -648,7 +648,7 @@
         </div>
       </div>
 
-      <div class="accordion-item">
+      <div class="accordion-item" id="reclamo-de-terceros">
         <h2 class="accordion-header" id="headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -661,7 +661,7 @@
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <div class="centrar-texto">
+            <div class="centrar-texto w-50 m-auto py-3">
             <strong>RECLAMOS DE TERCEROS.</strong> <br />
             Nosotros le brindamos un asesoramiento integral del siniestro,ya
             que contamos con una abogada de gran experiencia en el rubro de
@@ -677,7 +677,7 @@
           </div>
         </div>
       </div>
-      <div class="accordion-item">
+      <div class="accordion-item" id="info-importante">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -833,7 +833,7 @@
     </div>
   </div>
   
-  <section class="seccion-nosotros">
+  <section class="seccion-nosotros" id="seccion-nosotros">
     <div class="div-nosotros">
       <div class="contenedor-log-seguro-h1">
         <img class="img-logo-seguro" src="./imagenes/logo seguros.png" alt="logo seguro">
@@ -876,7 +876,7 @@
     </div>
   </section>
 
-<div class="seccion-contacto">
+<div class="seccion-contacto" id="seccion-contacto">
   <div class="div-sentrar-contacto">
   <div class="div-contacto-h4">
     <h4 class="contacto-h4">CONTACTO</h4>
