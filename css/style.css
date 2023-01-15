@@ -386,6 +386,8 @@ body {
   border: solid 2px grey;
   width: 170px;
   height: 35px;
+  display: flex;
+  align-items: center;
 }
 
 .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro h4 {
@@ -934,6 +936,17 @@ p {
 
 .seccion-nosotros {
   margin-top: 20px;
+}
+
+.seccion-nosotros .nosotros-texto{
+  width: 50%;
+}
+
+@media screen and (max-width: 610px) {
+  .seccion-nosotros .nosotros-texto{
+    width: 90%;
+    font-size: 0.8em;
+  }
 }
 
 /* seccion contacto */
